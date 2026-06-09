@@ -94,7 +94,7 @@ const Home = () => {
       {/* CTA */}
       <div className="
         absolute bottom-3 right-3
-        md:bottom-4 md:right-10
+        md:bottom-8 md:right-10
         z-10
       ">
         <a href="/contact">
@@ -102,12 +102,16 @@ const Home = () => {
             inline-flex items-center gap-1
             px-3 py-2
             text-[10px]
-            md:px-8 md:py-4
+            md:px-10 md:py-4
             md:text-lg
-            bg-gradient-to-r from-blue-950 to-emerald-600
+            bg-gradient-to-r from-primary via-primary to-orange-500
             text-white font-semibold md:font-bold
-            rounded-lg md:rounded-2xl
+            rounded-lg md:rounded-full
             whitespace-nowrap
+            shadow-xl hover:shadow-2xl
+            transform hover:scale-105
+            transition-all duration-300
+            border-2 border-white/30 hover:border-white
           ">
             Start Your Project
             <FiChevronDown className="-rotate-90 text-sm md:text-xl" />

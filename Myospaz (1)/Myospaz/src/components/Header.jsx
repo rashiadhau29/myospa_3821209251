@@ -28,10 +28,10 @@ const Header = ({ activeTab }) => {
   return (
     // <header className="header flex items-center fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4">
     <header className="header flex items-center fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2 ">
-      <div className="container mx-auto flex items-center justify-between relaive ">
+      <div className="container mx-auto flex items-center justify-between relative px-4">
         <Link to="/" className="logo flex items-center">
           {/* <img src={logo} alt="Logo" className="h-16 w-auto" /> */}
-          <img src={logo} alt="Logo" className="h-13 w-auto" />
+          <img src={logo} alt="Logo" className="h-12 w-auto" />
         </Link>
 
         <div
@@ -42,10 +42,10 @@ const Header = ({ activeTab }) => {
         </div>
 
         <nav
-          className={`navmenu absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 z-40 ${mobileNavOpen ? "block" : "hidden"} md:block`}
+          className={`navmenu absolute md:static top-full left-0 w-full md:w-auto md:flex-1 md:ml-8 bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 z-40 ${mobileNavOpen ? "block" : "hidden"} md:block`}
         >
           {/* <ul className="flex flex-col md:flex-row gap-4 md:gap-6 p-4 md:p-0"> */}
-          <ul className="flex flex-col md:flex-row gap-4 md:gap-6 p-4 md:p-0 text-sm">
+          <ul className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 p-4 md:p-0 text-sm">
             <li>
               <NavLink
                 to="/"
