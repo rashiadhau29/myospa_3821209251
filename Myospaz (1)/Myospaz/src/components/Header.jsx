@@ -6,13 +6,6 @@ import {
 } from "react-icons/fi";
 // import logo from '../../public/logo.png';
 import logo from "../../public/img/logo.png";
-import {
-  FaFacebookF,
-  FaXTwitter,
-  FaLinkedinIn,
-  FaYoutube,
-  FaInstagram,
-} from "react-icons/fa6";
 import ContactPopup from "./ContactPopup";
 
 const Header = ({ activeTab }) => {
@@ -27,8 +20,7 @@ const Header = ({ activeTab }) => {
 
   return (
     // <header className="header flex items-center fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4">
-    <header className="header flex items-center fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2 ">
-      <div className="container mx-auto flex items-center justify-between relative px-4">
+<header className="header flex items-center fixed top-0 left-0 right-0 z-50 bg-white py-2">      <div className="container mx-auto flex items-center justify-between relative px-4">
         <Link to="/" className="logo flex items-center">
           {/* <img src={logo} alt="Logo" className="h-16 w-auto" /> */}
           <img src={logo} alt="Logo" className="h-12 w-auto" />
@@ -283,96 +275,6 @@ const Header = ({ activeTab }) => {
             </li>
           </ul>
         </nav>
-
-        {/* Social Media + CTA */}
-        {/* <div className="flex items-center gap-4">
-          <div className="hidden md:flex items-center gap-4 mr-2">
-            <a
-              href="https://www.facebook.com/myospaz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600 transition"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="https://x.com/MyospazSoftware"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-black transition"
-            >
-              <FaXTwitter />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/myospaz-software-technologies"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-700 transition"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCsRTf1GSFiemYHoIBlwIVnQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-red-600 transition"
-            >
-              <FaYoutube />
-            </a>
-          </div>
-        
-          <Link
-            to="/contact"
-            className="cta-btn hidden md:inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition"
-          >
-            Get Started
-          </Link>
-        </div> */}
-
-        <div className="flex items-center gap-4">
-          <div className="hidden md:flex items-center gap-4 mr-2">
-            <a
-              href="https://www.facebook.com/myospaz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-600 transition-transform transform scale-100 hover:scale-150"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="https://x.com/MyospazSoftware"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-black transition-transform transform scale-100 hover:scale-150"
-            >
-              <FaXTwitter />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/myospaz-software-technologies"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-700 transition-transform transform scale-100 hover:scale-150"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCsRTf1GSFiemYHoIBlwIVnQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-600 hover:text-red-600 transition-transform transform scale-100 hover:scale-150"
-            >
-              <FaYoutube />
-            </a>
-            <a
-              href="https://www.instagram.com/myospaz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-600 hover:text-red-600 transition-transform transform scale-100 hover:scale-150"
-            >
-              <FaInstagram />
-            </a>
-          </div>
-
           {/* CTA Button */}
           <Link
             to="/contact"
@@ -390,7 +292,6 @@ const Header = ({ activeTab }) => {
 
           {/* <ContactPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} /> */}
         </div>
-      </div>
     </header>
   );
 };

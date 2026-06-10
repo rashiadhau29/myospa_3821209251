@@ -12,7 +12,7 @@ const About = () => {
     <section id="about" className="bg-white py-20">
 
       {/* ================= WHO WE ARE HEADER ================= */}
-  <div className="py-16 w-full -mt-6 mb-8 bg-gradient-to-r from-primary via-primary to-orange-500 shadow-xl">
+      <div className="py-16 w-full -mt-6 mb-8 bg-gradient-to-r from-primary via-primary to-orange-500 shadow-xl">
         <div
           className="max-w-7xl mx-auto px-6 lg:px-8 text-center"
           data-aos="fade-up"
@@ -20,7 +20,7 @@ const About = () => {
           <h1 className="text-5xl font-bold text-white mb-6">
             Who We Are
           </h1>
-    <p className="text-gray-50 leading-relaxed max-w-3xl mx-auto text-lg font-light">
+          <p className="text-gray-50 leading-relaxed max-w-3xl mx-auto text-lg font-light">
             MyoSpaz Technologies transforms businesses through innovative
             software solutions, combining technical expertise with strategic
             digital marketing.
@@ -33,7 +33,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
 
           <div data-aos="fade-right" className="h-full">
-            <div className="rounded-3xl overflow-hidden h-full min-h-[500px] bg-black flex items-center justify-center shadow-2xl border-4 border-primary/20 hover:border-primary/50 transition-all duration-300">
+            <div className="rounded-3xl overflow-hidden h-full min-h-[500px] bg-black flex items-center justify-center shadow-2xl transition-all duration-300">
               <video
                 width="100%"
                 height="100%"
@@ -57,7 +57,7 @@ const About = () => {
               Our Story
             </h2>
 
-         <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
               <p className="hover:text-gray-900 transition-colors duration-300">
                 Founded in 2013,{" "}
                 <span className="font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
@@ -75,7 +75,7 @@ const About = () => {
               <p className="hover:text-gray-900 transition-colors duration-300">
                 Our flagship products like the{" "}
                 <strong className="text-primary">Complaint Management System</strong> and{" "}
-                <strong className="text-primary"> Artopaz</strong> have set industry benchmarks,
+                <strong className="text-primary">Artopaz</strong> have set industry benchmarks,
                 earning recognition at prestigious platforms including the
                 International Tattoo Carnival.
               </p>
@@ -84,63 +84,70 @@ const About = () => {
         </div>
       </div>
 
-      {/* ================= CORE VALUES ================= */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-20 text-center">
-        <h3 className="text-4xl font-bold text-gray-900 mb-3 relative inline-block">
-          Our Core Values
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary to-orange-400"></span>
-        </h3>
-        <p className="text-gray-600 mt-8 text-lg max-w-2xl mx-auto">The principles that drive our innovation and success</p>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            {
-              icon: <BiTrendingUp className="text-2xl" />,
-              title: "Innovation",
-              text: "Constantly pushing boundaries with cutting-edge tech",
-            },
-            {
-              icon: <BiCheckCircle className="text-2xl" />,
-              title: "Reliability",
-              text: "Delivering stable, secure solutions you can trust",
-            },
-            {
-              icon: <BiGlobe className="text-2xl" />,
-              title: "Global Mindset",
-              text: "Solutions designed for worldwide scalability",
-            },
-            {
-              icon: <BiCodeAlt className="text-2xl" />,
-              title: "Excellence",
-              text: "Meticulous attention to every line of code",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="relative rounded-2xl p-8 bg-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-primary/30 group"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-orange-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative z-10 text-center">
-                <div className="bg-gradient-to-br from-primary/10 to-orange-400/10 w-16 h-16 mx-auto rounded-full flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                  {item.icon}
-                </div>
-                <h4 className="font-bold text-lg text-gray-900 mb-3 group-hover:text-primary transition-colors">
-                  {item.title}
-                </h4>
-             <p className="text-gray-600 leading-relaxed">
-                  {item.text}
-                </p>
-              </div>
-            </div>
-          ))}
+     {/* ================= CORE VALUES HEADER WITH BACKGROUND ================= */}
+<div className="w-full bg-gradient-to-r from-orange-100 via-orange-50 to-orange-100 py-14 mb-0 shadow-inner">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <h3 className="text-4xl font-bold text-gray-900 mb-3 relative inline-block">
+            Our Core Values
+            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary to-orange-400"></span>
+          </h3>
+          <p className="text-gray-600 mt-8 text-lg max-w-2xl mx-auto">
+            The principles that drive our innovation and success
+          </p>
         </div>
       </div>
 
-      {/* ================= MILESTONES ================= */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-28" data-aos="fade-up">
-        <div className="text-center mb-16">
+      {/* ================= CORE VALUES CARDS ================= */}
+      <div className="w-full bg-gradient-to-r from-orange-50 via-white to-orange-50 pb-20 mb-0">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: <BiTrendingUp className="text-2xl" />,
+                title: "Innovation",
+                text: "Constantly pushing boundaries with cutting-edge tech",
+              },
+              {
+                icon: <BiCheckCircle className="text-2xl" />,
+                title: "Reliability",
+                text: "Delivering stable, secure solutions you can trust",
+              },
+              {
+                icon: <BiGlobe className="text-2xl" />,
+                title: "Global Mindset",
+                text: "Solutions designed for worldwide scalability",
+              },
+              {
+                icon: <BiCodeAlt className="text-2xl" />,
+                title: "Excellence",
+                text: "Meticulous attention to every line of code",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="relative rounded-2xl p-8 bg-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-primary/30 group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-orange-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10 text-center">
+                  <div className="bg-gradient-to-br from-primary/10 to-orange-400/10 w-16 h-16 mx-auto rounded-full flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    {item.icon}
+                  </div>
+                  <h4 className="font-bold text-lg text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ================= MILESTONES HEADER WITH BACKGROUND ================= */}
+      <div className="w-full bg-gradient-to-br from-primary/5 via-orange-50 to-orange-100 py-14 mb-0 shadow-inner">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 relative inline-block">
             Our Milestones
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary to-orange-400"></span>
@@ -149,46 +156,51 @@ const About = () => {
             Key achievements that showcase our journey and capabilities
           </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Digital Transformation Pioneers",
-              description:
-                "Pioneered end-to-end digital transformation for small and mid-size businesses across India.",
-              icon: <BiTrendingUp className="text-3xl text-primary" />,
-            },
-            {
-              title: "Global Solutions",
-              description:
-                "Built 100+ customized solutions for diverse clients worldwide across 8 industries.",
-              icon: <BiGlobe className="text-3xl text-primary" />,
-            },
-            {
-              title: "Specialized Expertise",
-              description:
-                "Developed industry-specific software for Broadband Service Providers with 98% satisfaction rate.",
-              icon: <BiCodeAlt className="text-3xl text-primary" />,
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="relative rounded-2xl shadow-lg hover:shadow-2xl p-8 bg-white border border-gray-100 hover:border-primary/30 transition-all duration-300 group transform hover:-translate-y-1"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-orange-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative z-10">
-                <div className="bg-gradient-to-br from-primary/20 to-orange-400/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:from-primary group-hover:to-orange-400 group-hover:text-white transition-all duration-300">
-                  {item.icon}
+      {/* ================= MILESTONES CARDS ================= */}
+      <div className="w-full bg-gradient-to-br from-primary/5 via-orange-50 to-orange-100 pb-28">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Digital Transformation Pioneers",
+                description:
+                  "Pioneered end-to-end digital transformation for small and mid-size businesses across India.",
+                icon: <BiTrendingUp className="text-3xl text-primary" />,
+              },
+              {
+                title: "Global Solutions",
+                description:
+                  "Built 100+ customized solutions for diverse clients worldwide across 8 industries.",
+                icon: <BiGlobe className="text-3xl text-primary" />,
+              },
+              {
+                title: "Specialized Expertise",
+                description:
+                  "Developed industry-specific software for Broadband Service Providers with 98% satisfaction rate.",
+                icon: <BiCodeAlt className="text-3xl text-primary" />,
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="relative rounded-2xl shadow-lg hover:shadow-2xl p-8 bg-white border border-gray-100 hover:border-primary/30 transition-all duration-300 group transform hover:-translate-y-1"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-orange-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="bg-gradient-to-br from-primary/20 to-orange-400/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:from-primary group-hover:to-orange-400 group-hover:text-white transition-all duration-300">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
+                    {item.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
-                  {item.title}
-                </h3>
-             <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
-                  {item.description}
-                </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 
@@ -231,4 +243,3 @@ const About = () => {
 };
 
 export default About;
-
