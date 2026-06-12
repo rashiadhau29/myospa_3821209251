@@ -49,7 +49,7 @@ const Manufacturing = () => {
         </div>
       </div>
 
-      <section className="flex flex-col lg:flex-row items-center gap-10 mb-28">
+      <section className="bg-sky-50 p-10 rounded-2xl flex flex-col lg:flex-row items-center gap-10 mb-28">
         <div className="lg:w-1/2">
           <img 
             src={windowsAppImg} 
@@ -69,7 +69,7 @@ const Manufacturing = () => {
       </section>
 
     
-      <section className="flex flex-col lg:flex-row-reverse items-center gap-10 mb-28">
+      <section className="bg-orange-50 p-10 rounded-2xl flex flex-col lg:flex-row-reverse items-center gap-10 mb-28">
         <div className="lg:w-1/2">
           <img 
             src={webAppImg} 
@@ -88,7 +88,7 @@ const Manufacturing = () => {
       </section>
 
  
-      <section className="flex flex-col lg:flex-row items-center gap-10 mb-28">
+      <section className="bg-emerald-50 p-10 rounded-2xl flex flex-col lg:flex-row items-center gap-10 mb-28">
         <div className="lg:w-1/2">
           <img 
             src={mobileAppImg} 
@@ -107,7 +107,7 @@ const Manufacturing = () => {
       </section>
 
    
-      <section className="mb-16">
+      <section className="bg-indigo-50 p-10 rounded-2xl mb-16">
         <h2 className="text-2xl font-bold text-center mb-10">Some Esteemed Broadband Clients</h2>
        
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 px-4">

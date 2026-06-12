@@ -20,7 +20,7 @@ const LifecycleDiagram = () => {
   const [activeStep, setActiveStep] = useState(null);
 
   return (
-    <section className="w-full py-20 bg-gray-50" data-aos="fade-up">
+    <section className="w-full py-20 bg-amber-50" data-aos="fade-up">
       <div className="max-w-screen-xl mx-auto px-4 flex flex-col items-center">
         <h2 className="text-3xl font-bold mb-10">Project Lifecycle</h2>
 
@@ -85,7 +85,7 @@ const MobileBannerPage = () => {
       </section>
 
       {/* ================= About Section ================= */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-sky-50">
         <div className="max-w-screen-xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -130,7 +130,7 @@ const MobileBannerPage = () => {
       </section>
 
       {/* ================= Mobile Services Section ================= */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-emerald-50">
         <div className="max-w-screen-xl mx-auto px-4 lg:px-8">
           <div className="bg-white rounded-2xl shadow-lg p-10">
             <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
@@ -157,7 +157,7 @@ const MobileBannerPage = () => {
       <LifecycleDiagram />
 
       {/* ================= Value Section ================= */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-indigo-50">
         <div className="max-w-screen-xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-[#004b6f] mb-16">
             App development brings value <br /> to your organization

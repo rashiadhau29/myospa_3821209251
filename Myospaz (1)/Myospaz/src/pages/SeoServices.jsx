@@ -43,7 +43,7 @@ const SeoServices = () => {
    
       <div className="space-y-28 mb-28">
  
-        <section id="on-page-optimization" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="on-page-optimization" className="bg-purple-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={onpage} 
@@ -65,7 +65,7 @@ const SeoServices = () => {
           </div>
         </section>
 
-        <section id="off-page-optimization" className="scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
+        <section id="off-page-optimization" className="bg-rose-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={offpage} 

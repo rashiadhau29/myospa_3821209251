@@ -45,7 +45,7 @@ const PaymentGateway = () => {
 
       <div className="space-y-28 mb-28">
    
-        <section id="payment-gateway-integration-in-existing-system" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="payment-gateway-integration-in-existing-system" className="bg-sky-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={payintegration} 
@@ -68,7 +68,7 @@ const PaymentGateway = () => {
         </section>
 
     
-        <section id="payment-gateway-process" className="scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
+        <section id="payment-gateway-process" className="bg-orange-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={payprocess} 
@@ -90,7 +90,7 @@ const PaymentGateway = () => {
           </div>
         </section>
 
-        <section id="payment-gateway-integration-in-mobile-applications" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="payment-gateway-integration-in-mobile-applications" className="bg-emerald-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={paymobapp} 

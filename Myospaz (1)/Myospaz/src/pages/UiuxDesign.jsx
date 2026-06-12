@@ -40,7 +40,7 @@ const UiuxDesign = () => {
 
       <div className="space-y-28 mb-28">
    
-        <section id="designing-responsive-websites" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="designing-responsive-websites" className="bg-sky-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={designing} 
@@ -63,7 +63,7 @@ const UiuxDesign = () => {
         </section>
 
     
-        <section id="logo-designing" className="scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
+        <section id="logo-designing" className="bg-orange-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={logodesiging} 
@@ -85,7 +85,7 @@ const UiuxDesign = () => {
           </div>
         </section>
 
-        <section id="outdoor-advertising-of-products" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="outdoor-advertising-of-products" className="bg-emerald-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={outdoor} 

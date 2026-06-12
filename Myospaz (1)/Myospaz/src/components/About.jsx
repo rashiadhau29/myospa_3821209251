@@ -9,10 +9,10 @@ import { FaEnvelope, FaBuilding } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about" className="bg-white py-20">
+    <div id="about" className="bg-white">
 
       {/* ================= WHO WE ARE HEADER ================= */}
-      <div className="py-16 w-full -mt-6 mb-8 bg-gradient-to-r from-primary via-primary to-orange-500 shadow-xl">
+      <section className="py-16 w-full bg-gradient-to-r from-primary via-primary to-orange-500 shadow-xl">
         <div
           className="max-w-7xl mx-auto px-6 lg:px-8 text-center"
           data-aos="fade-up"
@@ -26,10 +26,11 @@ const About = () => {
             digital marketing.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* ================= IMAGE + STORY ================= */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-28">
+      <section className="bg-slate-50 py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
 
           <div data-aos="fade-right" className="h-full">
@@ -83,9 +84,10 @@ const About = () => {
           </div>
         </div>
       </div>
+    </section>
 
      {/* ================= CORE VALUES HEADER WITH BACKGROUND ================= */}
-<div className="w-full bg-gradient-to-r from-orange-100 via-orange-50 to-orange-100 py-14 mb-0 shadow-inner">
+      <section className="w-full bg-blue-100 py-14 shadow-inner">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h3 className="text-4xl font-bold text-gray-900 mb-3 relative inline-block">
             Our Core Values
@@ -95,10 +97,10 @@ const About = () => {
             The principles that drive our innovation and success
           </p>
         </div>
-      </div>
+      </section>
 
       {/* ================= CORE VALUES CARDS ================= */}
-      <div className="w-full bg-gradient-to-r from-orange-50 via-white to-orange-50 pb-20 mb-0">
+      <section className="w-full bg-blue-50 pb-20 pt-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -143,10 +145,10 @@ const About = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* ================= MILESTONES HEADER WITH BACKGROUND ================= */}
-      <div className="w-full bg-gradient-to-br from-primary/5 via-orange-50 to-orange-100 py-14 mb-0 shadow-inner">
+      <section className="w-full bg-emerald-100 py-14 shadow-inner">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 relative inline-block">
             Our Milestones
@@ -156,10 +158,10 @@ const About = () => {
             Key achievements that showcase our journey and capabilities
           </p>
         </div>
-      </div>
+      </section>
 
       {/* ================= MILESTONES CARDS ================= */}
-      <div className="w-full bg-gradient-to-br from-primary/5 via-orange-50 to-orange-100 pb-28">
+      <section className="w-full bg-emerald-50 pb-28 pt-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -202,13 +204,14 @@ const About = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* ================= CTA WITH ICONS ================= */}
-      <div
-        className="bg-gradient-to-r from-primary via-orange-500 to-orange-400 rounded-3xl p-12 text-white mb-20 max-w-7xl mx-auto text-center shadow-2xl"
-        data-aos="fade-up"
-      >
+      <section className="bg-orange-50 py-20">
+        <div
+          className="bg-gradient-to-r from-primary via-orange-500 to-orange-400 rounded-3xl p-12 text-white max-w-7xl mx-auto text-center shadow-2xl"
+          data-aos="fade-up"
+        >
         <h2 className="text-4xl font-bold mb-6 text-white">
           Ready to Transform Your Business?
         </h2>
@@ -237,8 +240,9 @@ const About = () => {
           </a>
         </div>
       </div>
+      </section>
 
-    </section>
+    </div>
   );
 };
 

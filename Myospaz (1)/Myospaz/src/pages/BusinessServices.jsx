@@ -44,7 +44,7 @@ const BusinessServices = () => {
       {/* Service Details with Alternating Layout */}
       <div className="space-y-28 mb-28">
         {/* Product Concept & Design */}
-        <section id="it help desk support" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="it help desk support" className="bg-sky-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={desksupport} 
@@ -67,7 +67,7 @@ const BusinessServices = () => {
         </section>
 
         {/* Product Maintenance & Support */}
-        <section id="technical-support" className="scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
+        <section id="technical-support" className="bg-orange-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={technicalsupport} 

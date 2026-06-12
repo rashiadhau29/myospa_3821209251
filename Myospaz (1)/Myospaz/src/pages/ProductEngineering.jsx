@@ -43,7 +43,7 @@ const ProductEngineeringPage = () => {
         <div className="space-y-28 mb-28">
           <section
             id="product-concept-design"
-            className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10 bg-white p-8 rounded-xl"
+            className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10 bg-sky-50 p-8 rounded-xl"
           >
             <div className="lg:w-1/2">
               <img
@@ -85,7 +85,7 @@ const ProductEngineeringPage = () => {
 
           <section
             id="product-maintenance-support"
-            className="scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10 bg-white p-8 rounded-xl "
+            className="scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10 bg-emerald-50 p-8 rounded-xl "
           >
             <div className="lg:w-1/2">
               <img
@@ -123,7 +123,7 @@ const ProductEngineeringPage = () => {
           {/* Product Testing */}
           <section
             id="product-testing"
-            className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10 bg-white p-8 rounded-xl "
+            className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10 bg-indigo-50 p-8 rounded-xl "
           >
             <div className="lg:w-1/2">
               <img

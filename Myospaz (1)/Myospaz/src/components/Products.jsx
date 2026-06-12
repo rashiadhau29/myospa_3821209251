@@ -99,7 +99,9 @@ const ProductsPage = () => {
   const pdfUrl = "/pdfs/products-brochure.pdf"; // PDF path
 
   return (
-    <section className="py-16 bg-gray-50">
+    <div className="bg-white">
+      {/* Banner Section */}
+      <section className="py-16 bg-amber-50">
       {/* Banner */}
       <div className="relative w-full  mb-14 flex items-center justify-center overflow-hidden">
         <img
@@ -107,6 +109,7 @@ const ProductsPage = () => {
           alt="Products Banner"
           className="w-full h-90 object-contain object-top"
         />
+        </div>
 
         {/* Banner PDF Button */}
         {/* Banner PDF Button */}
@@ -130,10 +133,11 @@ const ProductsPage = () => {
   </a>
 </div>
 
-      </div>
+      </section>
 
-      <div className="container mx-auto px-4">
-        {/* Tabs */}
+      <section className="py-12 bg-sky-50">
+        <div className="container mx-auto px-4">
+          {/* Tabs */}
         <div className="flex justify-center mb-12">
           <div className="inline-flex rounded-md shadow-sm">
             <button
@@ -159,9 +163,11 @@ const ProductsPage = () => {
             </button>
           </div>
         </div>
+          </div>
+      </section>
 
-        {/* Cards Grid */}
-        <div className="relative w-full py-12">
+      {/* Cards Grid */}
+      <section className="relative w-full py-16 bg-emerald-50">
           <div className="max-w-screen-xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {Products[activeTab].map((product, index) => (
@@ -199,10 +205,11 @@ const ProductsPage = () => {
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Bottom PDF Button */}
-        <div className="flex justify-center mt-16">
+        <section className="py-16 bg-rose-50">
+          <div className="flex justify-center">
           <a
             href="/public/pdf/Marketing Report Doc.pdf"
             target="_blank"
@@ -211,9 +218,9 @@ const ProductsPage = () => {
           >
             Download Services ⬇️
           </a>
-        </div>
+          </div>
+        </section>
       </div>
-    </section>
   );
 };
 

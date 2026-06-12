@@ -27,16 +27,6 @@ const Home = () => {
         />
       </div>
 
-      {/* CENTER OF EXCELLENCE TEXT */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-          Centre Of Excellence
-        </h1>
-
-        <p className="text-sm md:text-xl text-white/90">
-          Comprehensive solutions designed to transform your business
-        </p>
-      </div>
 
       {/* CTA */}
       <div

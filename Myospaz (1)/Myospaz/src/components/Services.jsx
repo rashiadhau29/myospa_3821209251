@@ -32,7 +32,7 @@
     ];
 
     return (
-      <section className="bg-gradient-to-b from-gray-50 to-white py-16">
+      <section className="bg-gradient-to-b from-blue-50 to-purple-50 py-16">
         <div className="container mx-auto px-6 text-center">
           {/* Heading */}
           <h2 className="text-5xl font-bold text-gray-900 mb-4 relative inline-block">

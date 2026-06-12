@@ -52,7 +52,7 @@ const ServicesPage = () => {
    
       <div className="space-y-28">
      
-        <section id="application-development" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="application-development" className="bg-orange-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={appDevImg} 
@@ -73,7 +73,7 @@ const ServicesPage = () => {
           </div>
         </section>
 
-   <section id="erp-platforms" className="scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
+   <section id="erp-platforms" className="bg-sky-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row-reverse items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={erpImg} 
@@ -95,7 +95,7 @@ const ServicesPage = () => {
         </section>
 
        
-        <section id="mobile-app-development" className="scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
+        <section id="mobile-app-development" className="bg-indigo-50 p-10 rounded-2xl scroll-mt-24 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <img 
               src={mobileAppImg} 

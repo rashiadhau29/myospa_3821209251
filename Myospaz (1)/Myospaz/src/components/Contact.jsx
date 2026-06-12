@@ -312,132 +312,134 @@ const Contact = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-12">
-        {/* Left Info */}
-        <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-gray-800">Get in Touch</h2>
-          <p className="text-gray-600">
-            Fill out the form or use the details below to connect with us.
-          </p>
+      <section className="bg-orange-50 py-16">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
+          {/* Left Info */}
+          <div className="space-y-6">
+            <h2 className="text-2xl font-bold text-gray-800">Get in Touch</h2>
+            <p className="text-gray-600">
+              Fill out the form or use the details below to connect with us.
+            </p>
 
-          <div className="space-y-4">
-            <div>
-              <h3 className="font-semibold text-gray-800 flex items-center gap-2">
-                <FiMapPin /> Address
-              </h3>
-              <p className="text-gray-600">
-                Myospaz Software Technologies, Shinde Pul, Pune - 411023
-              </p>
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-semibold text-gray-800 flex items-center gap-2">
+                  <FiMapPin /> Address
+                </h3>
+                <p className="text-gray-600">
+                  Myospaz Software Technologies, Shinde Pul, Pune - 411023
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-800 flex items-center gap-2">
+                  <FiPhone /> Phone
+                </h3>
+                <p className="text-gray-600">7743880882, 9370569996</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-800 flex items-center gap-2">
+                  <FiMail /> Email
+                </h3>
+                <p className="text-gray-600">srijantechit@gmail.com</p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-semibold text-gray-800 flex items-center gap-2">
-                <FiPhone /> Phone
-              </h3>
-              <p className="text-gray-600">7743880882, 9370569996</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-gray-800 flex items-center gap-2">
-                <FiMail /> Email
-              </h3>
-              <p className="text-gray-600">srijantechit@gmail.com</p>
+
+            <div className="mt-6">
+              <iframe
+                title="Google Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.3387107212184!2d73.78707317457439!3d18.468310682615105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2958455182c89%3A0xa5a415b04e4292b6!2sMyospaz%20Software%20Technologies!5e0!3m2!1sen!2sin!4v1762164598218!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                loading="lazy"
+                className="rounded-lg shadow-md border"
+              ></iframe>
             </div>
           </div>
 
-          <div className="mt-6">
-            <iframe
-              title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.3387107212184!2d73.78707317457439!3d18.468310682615105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2958455182c89%3A0xa5a415b04e4292b6!2sMyospaz%20Software%20Technologies!5e0!3m2!1sen!2sin!4v1762164598218!5m2!1sen!2sin"
-              width="100%"
-              height="250"
-              loading="lazy"
-              className="rounded-lg shadow-md border"
-            ></iframe>
-          </div>
-        </div>
+          {/* Form */}
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Send Us a Message
+            </h2>
 
-        {/* Form */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            Send Us a Message
-          </h2>
+            {submitStatus.message && (
+              <div
+                className={`mb-4 p-3 rounded ${submitStatus.success ? "bg-green-100 text-green-600" : "bg-red-100 text-red-600"}`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
 
-          {submitStatus.message && (
-            <div
-              className={`mb-4 p-3 rounded ${submitStatus.success ? "bg-green-100 text-green-600" : "bg-red-100 text-red-600"}`}
-            >
-              {submitStatus.message}
-            </div>
-          )}
-
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full p-3 border rounded"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full p-3 border rounded"
+                />
+              </div>
               <input
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
+                name="subject"
+                placeholder="Subject"
+                value={formData.subject}
                 onChange={handleChange}
                 required
                 className="w-full p-3 border rounded"
               />
               <input
-                name="email"
-                type="email"
-                placeholder="Your Email"
-                value={formData.email}
+                name="phone"
+                placeholder="Phone"
+                value={formData.phone}
                 onChange={handleChange}
                 required
                 className="w-full p-3 border rounded"
               />
-            </div>
-            <input
-              name="subject"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border rounded"
-            />
-            <input
-              name="phone"
-              placeholder="Phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border rounded"
-            />
-            <input
-              name="companyname"
-              placeholder="Company Name"
-              value={formData.companyname}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border rounded"
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border rounded"
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full bg-blue-900 text-white py-2 rounded"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? (
-                "Sending..."
-              ) : (
-                <span className="flex items-center justify-center gap-2">
-                  <FiSend /> Send Message
-                </span>
-              )}
-            </button>
-          </form>
+              <input
+                name="companyname"
+                placeholder="Company Name"
+                value={formData.companyname}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border rounded"
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border rounded"
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full bg-blue-900 text-white py-2 rounded"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  "Sending..."
+                ) : (
+                  <span className="flex items-center justify-center gap-2">
+                    <FiSend /> Send Message
+                  </span>
+                )}
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
