@@ -79,6 +79,10 @@ button:focus-visible {
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  font-size: 13px; /* Default is 16px. Setting to 14px scales down all rem units proportionally for a cleaner, professional look */
+}
+
 /* ✅ Set Global Font to Poppins */
 :root {
   --tw-font-sans: "Poppins", sans-serif;
